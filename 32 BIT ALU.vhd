@@ -11,7 +11,7 @@ entity ALU_32bit is
     );
 end ALU_32bit;
 
-architecture Behavioral of ALU_32bit is
+architecture Behaviour of ALU_32bit is
     signal  N,C,V,Z : STD_LOGIC;
 begin
     process (A, B, ALUControl)
@@ -104,4 +104,4 @@ begin
                 Flags <= N&C&Z&V;
         end case;
     end process;
-end Behavioral;
+end Behaviour;
